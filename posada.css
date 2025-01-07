@@ -1,0 +1,390 @@
+body {
+    --segundo-color: #714C31;
+    --tercero-color: #B94B39;
+    --cuarto-color: #FEF9E4;
+    --main-color: #a0815a;
+}
+
+body {
+    font-family: "Saira", serif;
+    background-color: var(--cuarto-color);
+    color: #714C31;
+}
+
+h1 {
+    font-weight: 900;
+    size: 60px;
+    padding: 5px;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 450;
+}
+
+h4 {
+    font-weight: 100;
+}
+
+p {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+header {
+    color: var(--cuarto-color);
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    background-color: var(--segundo-color);
+    text-align: center;
+    justify-content: center;
+    align-items: baseline;
+}
+
+header img {
+    height: 65PX;
+}
+
+header h1 {
+    font-size: 60px;
+}
+
+nav {
+    background-color: var(--main-color);
+
+}
+
+nav ul {
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    flex-grow: 2;
+}
+
+nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cuarto-color);
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: var(--tercero-color);
+}
+
+main {
+    margin-top: 5px;
+    background-color: var(--cuarto-color);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: var(--cuarto-color);
+    font-size: 8px;
+    padding: 5px;
+    margin-top: 10px;
+    height: 25px;
+    background-color: var(--main-color);
+
+}
+
+footer img {
+    height: 20px;
+    padding: 5px;
+}
+
+nav ul li a.activo {
+    background-color: #714C31;
+}
+
+.holder {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+
+.cabecera {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+main img {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    margin: 5px;
+    margin-right: 5px;
+    box-shadow: 7px 7px 5px -1px var(--segundo-color);
+}
+
+.testimonio {
+    background-color: var(--segundo-color);
+    padding: 10px;
+    color: var(--cuarto-color);
+
+
+    border-radius: 3px;
+    margin: 0;
+    box-shadow: 4px 4px 5px -2px var(--segundo-color);
+
+}
+
+.testimonio .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    display: block;
+}
+
+.testimonio .autor {
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    margin: 12px;
+}
+
+.testimonios {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-color: var(--segundo-color);
+}
+
+.carta {
+
+    background-color: var(--main-color);
+    color: var(--cuarto-color);
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px -2px var(--segundo-color);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 220px;
+    padding: 5px;
+}
+
+.carta p {
+    font-size: 15px;
+    margin: 1px;
+    padding: 0;
+}
+
+.carta h2 {
+    font-size: 25px;
+    font-weight: 900;
+    margin: 1px;
+    padding: 0;
+}
+
+.carta img {
+    height: 100px;
+    width: 95%;
+    object-fit: cover;
+}
+
+.cartas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto {
+    padding: 15px;
+    width: 60%;
+}
+
+.formulario {
+    padding: 15px;
+    width: 40%;
+}
+
+form{
+    border-color: var(--main-color);
+}
+
+#b_reset{
+    background-color: var(--main-color);
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--cuarto-color);
+    font-size: 20px;
+}
+#b_reset:hover{
+    background-color: var(--tercero-color);
+}
+
+#b_submit{
+    background-color: var(--main-color);
+    color: var(--cuarto-color);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 800;
+}
+#b_submit:hover{
+    background-color: var(--tercero-color);
+}
+
+
+
+@media (max-width: 640px) {
+    header h1 {
+        font-size: 38px;
+    }
+
+    header img {
+        height: 45PX;
+    }
+
+    header {
+        height: 100px;
+
+    }
+
+    nav ul li a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    nav ul li a:hover {
+        background-color: var(--tercero-color);
+    }
+
+
+    footer {
+        font-size: 6px;
+        padding: 4px;
+        margin-top: 5px;
+        height: 18px;
+    }
+
+    footer img {
+        height: 10px;
+        padding: 3px;
+    }
+
+    nav ul li a.activo {
+        background-color: #714C31;
+    }
+
+    .cabecera {
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    section {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    main img {
+        height: 150px;
+        width: 150px;
+        margin: 3px;
+        margin-right: 3px;
+    }
+
+    .testimonio {
+        padding: 5px;
+        border-radius: 3px;
+    }
+
+    .testimonio .cita {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 15px;
+        display: block;
+    }
+
+    .testimonio .autor {
+        font-size: 8px;
+        margin: 8px;
+    }
+
+
+    .testimonios {
+        padding: 3px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .columnas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacto {
+        padding: 10px;
+        width: 95%;
+    }
+
+    .formulario {
+        padding: 10px;
+        width: 95%;
+    }
+
+    .carta {
+        border-radius: 3px;
+        margin: 6px;
+        width: 170px;
+        padding: 3px;
+    }
+
+    .carta p {
+        font-size: 13px;
+    }
+
+    .carta h2 {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .carta img {
+        height: 80px;
+    }
+
+
+}
